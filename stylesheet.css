@@ -1,0 +1,148 @@
+@font-face {
+    font-family: PlexSans;
+    src: url(./fonts/IBM_Plex_Sans/IBMPlexSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Shrikhand;
+    src: url(./fonts/Shrikhand/Shrikhand-Regular.ttf);
+}
+
+:root {
+    font-family:Arial, Helvetica, sans-serif;
+    color: white; 
+    background-color: black;
+}
+
+a {
+    color: white;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+main {
+    min-height: 100vh;
+    max-width: 65%;
+}
+
+.page {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    max-width: 100%;
+    margin-right: auto;
+
+}
+
+/*sidebar image styling*/
+.splash-image {
+    background-image: url(./images/tarot-cards.jpg);
+    background-size: cover;  
+    background-repeat: no-repeat; 
+    height: 100%;
+    width: 45%; 
+    display: flex;
+    flex-direction: column-reverse;
+}
+.splash-image > p {
+    bottom: 0; 
+    margin-top: 85%;
+    text-align: center;
+}
+
+/*logo styling*/ 
+.logo {
+    background-color: rgba(0, 0, 0, 0.397);
+    height: 150px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Shrikhand; 
+}
+
+.logo img {
+    filter: invert(1); 
+    padding: 50px;
+    height: 100px;
+
+}
+
+.dummy-text {
+    padding: 4rem 4rem;
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    justify-content: space-around;
+    font-family: PlexSans, Arial, Helvetica, sans-serif; 
+    font-size: 25px;
+}
+
+
+/*form styling*/ 
+
+fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: none;
+    background-color: rgb(10, 10, 10); 
+}
+
+.form-container h1 {
+    text-align: left;
+    margin-left: 120px;
+
+}
+
+.input {
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    text-transform: uppercase; 
+    width: 65%;
+    padding: 10px;
+}
+
+.input #cpassword {
+border-color: red; 
+}
+
+.invalid {
+    color: red;
+    font-size: x-small; 
+}
+
+.create-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+}
+
+.create-account p {
+    padding: 10px;
+}
+
+.create-account button {
+    border-radius: 25px;
+    height: 45px;
+    padding: 15px;
+    color: white;
+    background-color: #385a75;
+
+}
+
+footer {
+    text-align: center;
+    margin-top: 135px; 
+
+}
+
+
